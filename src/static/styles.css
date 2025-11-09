@@ -156,8 +156,9 @@ footer {
 }
 
 .participants-list {
-  list-style: disc;
-  padding-left: 22px;
+  /* hide default bullet points and reset spacing so we can style each participant row */
+  list-style: none;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -187,6 +188,22 @@ footer {
   font-size: 13px;
   color: #444;
   word-break: break-all;
+}
+
+.participant-delete {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.participant-delete:hover {
+  background: rgba(198, 40, 40, 0.06);
 }
 
 .no-participants {
